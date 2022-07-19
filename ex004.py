@@ -1,0 +1,8 @@
+it = input('Digite algo:')
+print('O valor digitado é do tipo', type(it))
+print('É uma letra maiúcula?', it.isupper())
+print('É alphanumérico?',it.isalnum())
+print('É uma letra?', it.isalpha())
+print('É um numéro?', it.isnumeric())
+print('Tem somente espaços?', it.isspace())
+print(it)
