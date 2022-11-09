@@ -2,6 +2,19 @@ print('Exercício Python 37: Escreva um programa em Python que leia um número i
 print('-' * 30)
 print('CONVERSOR DE BASES NUMÉRICAS')
 print('-' * 30)
-n = float(input('Digite o número que deseja converter:'))
-print('Digite o numéro referente:')
-convert = (int(input('Q')))
+n = int(input('Digite o número que deseja converter:'))
+print('[1]Converter para BINÁRIO.\n[2]Converter para OCTAL.\n[3]Converter para HEXADECIMAL.')
+convert = int(input('Sua opção é:'))
+if convert == 1:
+    print((bin(n))[2:])
+elif convert == 2:
+    print((oct(n))[2:])
+elif convert == 3:
+    print((hex(n))[2:])
+else:
+    print('VALOR INVÁLIDO.')
+
+
+
+
+
